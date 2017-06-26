@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="sweetnothings:war exploded">
+    <output-path>$PROJECT_DIR$/target/sweet nothings</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="sweetnothings" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.jfinal:jfinal:3.1" />
+          <element id="library" level="project" name="Maven: cglib:cglib-nodep:3.1" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.2-5" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.2-5" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.1.2-5" />
+          <element id="library" level="project" name="Maven: org.jetbrains:annotations:13.0" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.25" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.5" />
+          <element id="library" level="project" name="Maven: net.coobird:thumbnailator:0.4.8" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/sweet nothings/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="sweetnothings/web/Web" />
+    </root>
+  </artifact>
+</component>
