@@ -21,6 +21,7 @@ public class JsonInterceptor implements Interceptor {
                 controller.setAttr("body",((JsonBaseController) controller).getBody());
             }
         }catch (Exception e){
+            e.printStackTrace();
             controller.setAttr("err",e instanceof JsonException ?((JsonException)e).getErrNumber():500);
             controller.setAttr("errMsg",e instanceof JsonException?((JsonException)e).getErrMsg():"Unknown error");
         }finally {
