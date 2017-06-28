@@ -20,12 +20,14 @@ public class WebConfig extends JFinalConfig {
     }
 
     public void configRoute(Routes routes) {
+        routes.setBaseViewPath("/_view/page");
         routes.add("/api", ApiController.class);
         routes.add("/", HelloController.class);
     }
 
     public void configEngine(Engine engine) {
-
+        engine.addSharedObject("assets","/_view/assets");
+        engine.addSharedFunction("/_view/common/_layout.html");
     }
 
     public void configPlugin(Plugins plugins) {
